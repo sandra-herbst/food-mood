@@ -4,11 +4,10 @@ FoodMood helps you decide what to eat every day. The app suggests two random dis
 # Setup
 
 1. Create ```.env``` file
-2. Start project
+2. Start project. If no database is found, the seeder is automatically executed with the sample data when the project is started.
  ```
  docker compose up
  ```
-If no database is found, the seeder is automatically executed with the sample data when the project is started.
 3. Access frontend at: http://localhost:3000/login
 4. Login credentials
  - email: admin@admin.de
