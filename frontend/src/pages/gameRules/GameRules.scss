@@ -1,0 +1,61 @@
+@import "src/styles/colors";
+@import "src/styles/styles";
+
+.rulesContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    form {
+        margin-bottom: 80px;
+    }
+}
+
+.backButton {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+.roundsHeading {
+    @include media-breakpoint-up(lg) {
+        margin-top: 20px;
+    }
+}
+
+.roundsRadioGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 10px;
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+        justify-content: left;
+    }
+}
+
+.roundsRadioButton {
+    margin: 0;
+}
+
+.optionsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-top: 30px;
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+}
+
+.ruleOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 30px;
+}

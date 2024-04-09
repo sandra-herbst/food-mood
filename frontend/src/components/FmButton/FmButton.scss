@@ -1,0 +1,62 @@
+@import "src/styles/colors";
+
+.btn {
+  padding: 10px 40px !important;
+
+  border-color: transparent !important;
+  border-radius: 20px !important;
+
+  font-family: MontserratBold, sans-serif !important;
+  color: white !important;
+
+  &.btnWithIcon {
+    color: $fm-icon !important;
+    background-color: unset;
+    padding: 0px !important;
+
+    &:hover {
+      background-color: $fm-icon-btn-hover !important;
+    }
+
+    &:active {
+      background-color: $fm-icon-btn-clicked !important;
+    }
+  }
+
+  &.btn-primary {
+    &.primaryFmBtn {
+      &:hover {
+        background-color: $fm-primary-btn-hover;
+      }
+
+      &:active {
+        background-color: $fm-primary-btn-clicked;
+      }
+    }
+
+    &.btnWithIcon {
+      color: $fm-primary !important;
+    }
+  }
+
+  &.btn-secondary {
+    &.secondaryFmBtn {
+      &:hover {
+        background-color: $fm-accent-btn-hover;
+      }
+
+      &:active {
+        background-color: $fm-accent-btn-clicked;
+      }
+    }
+
+    &.btnWithIcon {
+      color: $fm-accent !important;
+    }
+  }
+
+  &.fixed-bottom {
+    width: fit-content;
+    margin: 0 auto 40px !important;
+  }
+}

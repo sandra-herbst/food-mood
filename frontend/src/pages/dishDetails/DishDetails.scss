@@ -1,0 +1,112 @@
+@import "src/styles/colors";
+@import "src/styles/styles";
+
+.dishBasics {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.dishImage {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+    height: 45vh;
+    margin-bottom: 0;
+  }
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 30vh;
+  border: 1.5px solid $fm-primary;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-up(lg) {
+    height: 45vh;
+  }
+}
+
+.dishName {
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  margin-top: 30px;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+.dishDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}
+
+.dishCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-left: 10px;
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: unset;
+  }
+}
+
+.saveBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    right: unset;
+  }
+}

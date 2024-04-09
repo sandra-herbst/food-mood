@@ -1,0 +1,22 @@
+//foodmood color pallet
+$fm-primary: #FC9F81;
+$fm-accent: #AC6B65;
+$fm-background: #FFF7EF;
+$fm-text: #4A5D79;
+$fm-icon: #2F4858;
+$fm-disabled: #D3DBE5;
+
+//colors button states
+$fm-primary-btn-hover: #E58F73;
+$fm-primary-btn-clicked: #CA7D64;
+$fm-accent-btn-hover: #9A625D;
+$fm-accent-btn-clicked: #895752;
+$fm-icon-btn-hover: #EDF5FF;
+$fm-icon-btn-clicked: #E5ECF5;
+
+//overwrite bootstrap theme-colors
+$theme-colors: (
+        "primary":    $fm-primary,
+        "secondary":  $fm-accent,
+        "background": $fm-background
+);

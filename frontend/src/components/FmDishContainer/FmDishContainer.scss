@@ -1,0 +1,22 @@
+.dishContainer {
+  margin-top: 30px;
+
+  .scrollingContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 15px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

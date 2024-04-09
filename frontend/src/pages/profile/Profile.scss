@@ -1,0 +1,32 @@
+@import "src/styles/styles";
+
+.Profile {
+  .profile-pic {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    margin-bottom: 50px;
+  }
+
+  .dishList {
+    margin: 20px 0 70px;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      margin-top: 15px;
+
+      @include media-breakpoint-up(md) {
+        width: 48%;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        width: 30%;
+      }
+    }
+  }
+}

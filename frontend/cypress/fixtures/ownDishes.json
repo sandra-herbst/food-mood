@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Bolognese",
+    "imagePath": "public/img/dishes/spaghetti_bolognese.jpg",
+    "labels": [
+      {
+        "id": 3,
+        "name": "No Fish"
+      }
+    ],
+    "dishTypes": [
+      {
+        "id": 2,
+        "name": "Lunch"
+      },
+      {
+        "id": 3,
+        "name": "Dinner"
+      }
+    ],
+    "user": {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.de",
+      "profileImagePath": "public/img/users/sample_avatar.jpg"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Croissant",
+    "imagePath": "public/img/dishes/croissants.png",
+    "labels": [
+      {
+        "id": 5,
+        "name": "No Meat"
+      },
+      {
+        "id": 3,
+        "name": "No Fish"
+      },
+      {
+        "id": 2,
+        "name": "No Eggs"
+      }
+    ],
+    "dishTypes": [
+      {
+        "id": 4,
+        "name": "Dessert"
+      },
+      {
+        "id": 1,
+        "name": "Breakfast"
+      }
+    ],
+    "user": {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.de",
+      "profileImagePath": "public/img/users/sample_avatar.jpg"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Yogurt Bowl",
+    "imagePath": "public/img/dishes/yogurt_bowl.jpg",
+    "labels": [
+      {
+        "id": 4,
+        "name": "No Gluten"
+      },
+      {
+        "id": 5,
+        "name": "No Meat"
+      },
+      {
+        "id": 3,
+        "name": "No Fish"
+      },
+      {
+        "id": 2,
+        "name": "No Eggs"
+      }
+    ],
+    "dishTypes": [
+      {
+        "id": 4,
+        "name": "Dessert"
+      },
+      {
+        "id": 1,
+        "name": "Breakfast"
+      }
+    ],
+    "user": {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.de",
+      "profileImagePath": "public/img/users/sample_avatar.jpg"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Porridge",
+    "imagePath": "public/img/dishes/porridge.jpg",
+    "labels": [
+      {
+        "id": 5,
+        "name": "No Meat"
+      },
+      {
+        "id": 3,
+        "name": "No Fish"
+      },
+      {
+        "id": 2,
+        "name": "No Eggs"
+      }
+    ],
+    "dishTypes": [
+      {
+        "id": 1,
+        "name": "Breakfast"
+      }
+    ],
+    "user": {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.de",
+      "profileImagePath": "public/img/users/sample_avatar.jpg"
+    }
+  }
+]

@@ -1,0 +1,72 @@
+stages:
+  - setup
+  - build
+  - test
+
+variables:
+  CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - cache/Cypress
+
+backend setup:
+  stage: setup
+  image: pluswerk/node-dev:18
+  script:
+    - yarn --cwd backend/ci ci
+  artifacts: # persist across multiple steps in single pipeline run
+    expire_in: 1h 
+    paths:
+      - backend/node_modules/
+
+frontend setup:
+  stage: setup
+  image: pluswerk/node-dev:18
+  script:
+    - yarn --cwd frontend/ci ci
+  artifacts: # persist across multiple steps in single pipeline run
+    expire_in: 1h
+    paths:
+      - frontend/node_modules/
+
+backend build:
+  stage: build
+  image: pluswerk/node-dev:18
+  script:
+    - yarn --cwd backend/build build
+
+frontend build:
+  stage: build
+  image: pluswerk/node-dev:18
+  script:
+    - CI=false yarn --cwd frontend/build build
+
+backend unit-tests:
+  stage: test
+  image: pluswerk/node-dev:18
+  script:
+    - yarn --cwd backend/test test
+    - yarn --cwd backend/test:unit test:unit
+
+backend e2e-tests:
+  stage: test
+  image: pluswerk/node-dev:18
+  script:
+    - yarn --cwd backend/test test
+    - yarn --cwd backend/test:e2e test:e2e
+
+frontend component-tests:
+  stage: test
+  image: pluswerk/node-dev:18
+  script:
+    - yarn --cwd frontend test
+
+frontend e2e-tests:
+  stage: test
+  image: cypress/browsers:node12.14.1-chrome85-ff81
+  script:
+    - yarn --cwd frontend cypress install
+    - yarn --cwd frontend cypress verify
+    - yarn --cwd frontend test:e2e

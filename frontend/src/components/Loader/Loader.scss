@@ -1,0 +1,18 @@
+.loaderContainer {
+    background-color: white;
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1500; 
+}
+
+.spinner-border {
+    position: fixed;
+    top: calc(50vh - 14px);
+    left: calc(50vw - 14px);
+    z-index: 2000;
+}
+

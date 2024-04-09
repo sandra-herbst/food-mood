@@ -1,0 +1,35 @@
+//register Montserrat font
+@font-face {
+  font-family: "MontserratLight";
+  src: local("MontserratLight"),
+  url("../../public/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: local("MontserratMedium"),
+  url("../../public/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: local("MontserratRegular"),
+  url("../../public/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: local("MontserratSemiBold"),
+  url("../../public/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: local("MontserratBold"),
+  url("../../public/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
